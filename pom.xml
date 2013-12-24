@@ -7,6 +7,10 @@
 	<properties>
 		<project.build.sourceEncoding>utf8</project.build.sourceEncoding>
 	</properties>
+	<scm> 
+	    <connection>https://github.com/deesceha/rq-sample-op.git</connection>
+        <developerConnection>scm:git:git@github.com:deesceha/rq-sample-op.git</developerConnection>
+	</scm>
 	<build>
 		<plugins>
 			<plugin>
@@ -19,6 +23,14 @@
 			</plugin>
 		</plugins>
 	</build>
+	<extensions>
+      <!-- Enabling the use of FTP -->
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+         <artifactId>wagon-ssh</artifactId>
+         <version>2.2</version>
+      </extension>
+    </extensions>
 	<dependencies>
 		<dependency>
 			<artifactId>ipo-api</artifactId>
@@ -40,4 +52,16 @@
 			</releases>
 		</repository>
 	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>cejotel</id>
+			<name>cjl repo</name>
+			<url>sftp://ftp.cejotel.de/webseiten/public/m2</url>
+		</repository>
+		<snapshotRepository>
+			<id>cejotel</id>
+			<name>cjl repo</name>
+			<url>sftp://ftp.cejotel.de/webseiten/public/m2</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
