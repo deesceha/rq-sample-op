@@ -2,13 +2,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>sample</groupId>
 	<artifactId>sample-op</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<properties>
 		<project.build.sourceEncoding>utf8</project.build.sourceEncoding>
 	</properties>
 	<scm> 
-	    <connection>https://github.com/deesceha/rq-sample-op.git</connection>
+	    <connection>scm:git:git@github.com:deesceha/rq-sample-op.git</connection>
         <developerConnection>scm:git:git@github.com:deesceha/rq-sample-op.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
 	<build>
 		<plugins>
