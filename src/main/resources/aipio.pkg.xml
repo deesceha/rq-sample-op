@@ -1,0 +1,12 @@
+<PackageSpec>
+	<mnemonic>sample01</mnemonic>
+	<name>sample01</name>
+	<description>rq sample 1</description>
+	<version>${pom.version}</version>
+	<OpEntries>
+		<OpEntry>
+			<clazz>de.deesceha.rq.samples.DotMatrixOp
+			</clazz>
+		</OpEntry>
+	</OpEntries>
+</PackageSpec>
