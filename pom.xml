@@ -58,10 +58,12 @@
 			<name>cjl repo</name>
 			<url>sftp://ftp.cejotel.de/webseiten/public/m2</url>
 		</repository>
+<!--
 		<snapshotRepository>
 			<id>cejotel</id>
 			<name>cjl repo</name>
 			<url>sftp://ftp.cejotel.de/webseiten/public/m2</url>
 		</snapshotRepository>
+-->
 	</distributionManagement>
 </project>
